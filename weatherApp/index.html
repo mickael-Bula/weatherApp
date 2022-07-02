@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/app.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+        <script src="./js/data.js" defer></script>
+        <script src="./js/config.js" defer></script>
+        <script src="./js/app.js" defer></script>
+        <title>API Météo</title>
+    </head>
+    <body>
+        <section class="top-banner">
+            <div class="container">
+              <h1 class="heading">Mon Appli Météo</h1>
+              <form class="form">
+                <input type="text" id="ville" placeholder="Rechercher une ville" autofocus>
+                <button class="button" type="submit">VALIDER</button>
+                <span class="msg"></span>
+            </form>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="container">
+            <div class="card">
+                <h2 class="city-name" data-name="">
+                    <span class="city-name__name"></span>
+                    <sup class="city-name__country"></sup>
+                </h2>
+                <div><span class="city-temp"></span><sup>°C</sup></div>
+        
+                <figure>
+                    <img class="city-icon" src="" alt="">
+                    <figcaption class="city-icon__description"></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
