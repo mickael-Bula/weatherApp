@@ -79,14 +79,15 @@ body {
 }
 
 #ville {
-  font-size: 2rem;
+  font-size: 2em;
   height: 40px;
   padding: 5px 5px 10px;
-  border-bottom: 1px solid;
+  /* currentColor permet d'hériter de la dernière valeur déclarée */
+  border-bottom: 1px solid currentColor;
 }
 
 #ville::placeholder {
-  color: currentColor; 
+  color: rgb(168, 168, 168);
 }
 
 .top-banner .form .button {
@@ -102,14 +103,6 @@ body {
 
 .top-banner .form .button:hover {
   background: var(--darkred);
-}
-
-.top-banner .form .msg {
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-  max-width: 450px;
-  min-height: 40px;
 }
 
 /* CARDS */
